@@ -1,0 +1,13 @@
+### .NET ###
+bin/
+obj/
+*.user
+*.suo
+
+### Banco de dados local (SQLite) ###
+data/
+
+### IDEs ###
+.idea
+.vs/
+.vscode/

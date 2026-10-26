@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>TodoList</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Em F# a ordem de compilação importa: cada arquivo só enxerga os que vêm antes dele. -->
+  <ItemGroup>
+    <Compile Include="Domain/Todo.fs" />
+    <Compile Include="Repositories/TodoRepository.fs" />
+    <Compile Include="Repositories/Memoria.fs" />
+    <Compile Include="Repositories/Sqlite.fs" />
+    <Compile Include="Services/TodoService.fs" />
+    <Compile Include="Http/Rotas.fs" />
+    <Compile Include="Config/RepositoryConfig.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.*" />
+  </ItemGroup>
+
+</Project>

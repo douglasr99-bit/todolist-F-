@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <title>To-Do List</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>To-Do List</h1>
+            </div>
+        </header>
+        <main>
+            <div class="tab">
+                <div class="card" data-day="segunda">
+                    <a class = "date"><span>Segunda</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="terça">
+                    <a class = "date"><span>Terça</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="quarta">
+                    <a class = "date"><span>Quarta</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="quinta">
+                    <a class = "date"><span>Quinta</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="sexta">
+                    <a class = "date"><span>Sexta</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="sabado">
+                    <a class = "date"><span>Sábado</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>
+                    </div>
+                </div>
+                <div class="card" data-day="domingo">
+                    <a class = "date"><span>Domingo</span></a>
+                    <div class="card-content">
+                        <ul class="task-list"></ul>        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container hidden">
+                <div class="form-title">
+                    <span> Titulo: </span>
+                    <input type="text" id="new-task-title" placeholder="Add a new title...">
+                </div>
+                <div class="form-color">
+                    <span> Cor: </span>
+                    <input type="color" id="new-task-color" placeholder="Add a new color for card...">
+                </div>
+                <div class="form-priority">
+                    <span> Prioridade: </span>
+                    <select id="new-task-priority">
+                        <option value="low">Baixa</option>''
+                        <option value="medium">Média</option>
+                        <option value="high">Alta</option>
+                    </select>
+                </div>
+                <div class="form-button">
+                    <button id="add-task-button">Adicionar Tarefa</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 To-Do List. All rights reserved for DrLog.</p>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
